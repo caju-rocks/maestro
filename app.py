@@ -38,7 +38,7 @@ while True:
             logger.critical(e)
 
     elif random1 >= 9 and random1 <= 10:
-        url = url_base + "info"
+        url = url_base + "exception"
 
         try:
             requests.get(url)
