@@ -38,16 +38,10 @@ while True:
             logger.critical(e)
 
     elif random1 >= 9 and random1 <= 10:
-        url = url_base + "exception"
-
-        try:
-            requests.get(url)
-            logger.error(f"requesting {url}")
-        except requests.exceptions.ConnectionError as e:
-            logger.critical(e)
+        continue
 
     else:
-        url = url_base + "info"
+        url = url_base + "debug"
 
         try:
             requests.get(url)
